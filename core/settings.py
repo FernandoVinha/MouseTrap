@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'users',
     'apps.home',  # Enable the inner home (home)
     'apps.MouseTrap',
+    'apps.SMALLS',
 ]
 
 MIDDLEWARE = [
