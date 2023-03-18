@@ -29,7 +29,6 @@ class MouseTrapViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user)
-        serializer.save(company=self.request.user.company)
 
 class MouseTrap2ViewSet(viewsets.ModelViewSet):
     queryset = MouseTrap2.objects.all()
